@@ -44,3 +44,4 @@ console.log(`El factorial de ${maxFactorial} es ${factorial}`);
 
 const acelerando = true;
 let velocidad = 0;
+
