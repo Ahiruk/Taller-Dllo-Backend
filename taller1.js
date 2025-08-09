@@ -41,27 +41,38 @@ console.log(mejorParidad(5));
 function peorParidad (num) {
 while (num >= 1 || num <= 10) {
     while (num===1 || num===2 || num===3 || num===4 || num===5 || num===6 || num===7 || num===8 || num===9 || num===10) {
-        if (num === 1){
+        while (num === 1) {
             return false;
-          }else if (num === 2) {
+            
+        }
+        while (num === 2) {
             return true;
-          }else if (num === 3) {
+        }
+        while (num === 3) {
             return false;
-          }else if (num === 4) {
+        }
+        while (num === 4) {
             return true;
-          }else if (num === 5) {
+        }
+        while (num === 5) {
             return false;
-          }else if (num === 6) {
+        }
+        while (num === 6) {
             return true;
-          }else if (num === 7) {
+        }
+        while (num === 7) {
             return false;
-          }else if (num === 8) {
+        }
+        while (num === 8) {
             return true;
-          }else if (num === 9) {
+        }
+        while (num === 9) {
             return false;
-          }else if (num === 10) {
+        }
+        while (num === 10) {
             return true;
-          }
+        }
+        
     }
     
   }
@@ -70,4 +81,4 @@ while (num >= 1 || num <= 10) {
 
 }
 
-console.log(peorParidad(5));
+console.log(peorParidad(1));
