@@ -1,0 +1,3 @@
+function CantStrings(int, out){
+    
+}
