@@ -11,9 +11,25 @@ const datos = require("./datos.json");
 
 function puntoUno(estudiantes) {
   // CODIGO DE PUNTO 1 AQUI
+  let cant =0;
+  for (let i = 0; i < datos.length; i++) {
+    if(promedio(datos[i].cursos)<3.3){
+      cant += 1
+    }
+    
+  }
 
-  return 0;
+  function promedio(notas){
+    let suma =0;
+    for (let i = 0; i < notas.length; i++) {
+      suma += notas[i].nota
+    }
+    return suma/notas.length
+  }
+
+  return cant;
 }
+console.log(puntoUno(datos))
 
 function puntoDos(estudiantes) {
   // CODIGO DE PUNTO 2 AQUI
