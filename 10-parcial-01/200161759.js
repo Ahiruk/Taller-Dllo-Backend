@@ -45,16 +45,8 @@ console.log(puntoDos(datos))
 
 function puntoTres(estudiantes) {
   // CODIGO DE PUNTO 3 AQUI
-    const n = estudiantes.length;
-    for (let i = 0; i < n - 1; i++) {
-      for (let j = 0; j < n - i - 1; j++) {
-        if (estudiantes[j].altura > estudiantes[j + 1].altura) {
-          const temp = estudiantes[j];
-          estudiantes[j] = estudiantes[j + 1];
-          estudiantes[j + 1] = temp;
-        }
-      }
-    }
+  puntoSiete(estudiantes)
+  
   let lista = []
   for (let i = 0; i < estudiantes.length; i++) {
     lista[i] =estudiantes[i]._id
@@ -101,3 +93,16 @@ function puntoSeis(palabra) {
 }
 console.log(puntoSeis("Hola"))
 // CODIGO DE PUNTO 7 AQUI
+
+function puntoSiete(estudiantes){
+  const n = estudiantes.length;
+  for (let i = 0; i < n - 1; i++) {
+    for (let j = 0; j < n - i - 1; j++) {
+      if (estudiantes[j].altura > estudiantes[j + 1].altura) {
+        const temp = estudiantes[j];
+        estudiantes[j] = estudiantes[j + 1];
+        estudiantes[j + 1] = temp;
+      }
+    }
+  }
+}
