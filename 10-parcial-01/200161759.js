@@ -35,14 +35,27 @@ function puntoCuatro(numeros) {
 
 function puntoCinco(palabra) {
   // CODIGO DE PUNTO 5 AQUI
+  let pal = palabra.length -1;
+  for (let i = 0; i < pal/2; i++) {
+    let inicio =  palabra[i]
+    let fin = palabra[pal-i]
 
-  return false;
+    if (inicio !=fin){
+      return false;
+    }
+    
+  }
+  return true;
 }
+console.log(puntoCinco("loca"))
 
 function puntoSeis(palabra) {
   // CODIGO DE PUNTO 6 AQUI
-
-  return "";
+  let inversa =""
+  for (let i = palabra.length -1; i >=0; i--) {
+    inversa += palabra[i] 
+  }
+  return inversa;
 }
-
+console.log(puntoSeis("Hola"))
 // CODIGO DE PUNTO 7 AQUI
