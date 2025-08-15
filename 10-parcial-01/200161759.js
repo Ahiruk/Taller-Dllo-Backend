@@ -11,7 +11,7 @@ const datos = require("./datos.json");
 
 function puntoUno(estudiantes) {
   // CODIGO DE PUNTO 1 AQUI
-  let cant =0;
+  let cant =0
   for (let i = 0; i < datos.length; i++) {
     if(promedio(datos[i].cursos)<3.3){
       cant += 1
@@ -20,14 +20,14 @@ function puntoUno(estudiantes) {
   }
 
   function promedio(notas){
-    let suma =0;
+    let suma =0
     for (let i = 0; i < notas.length; i++) {
       suma += notas[i].nota
     }
     return suma/notas.length
   }
 
-  return cant;
+  return cant
 }
 console.log(puntoUno(datos))
 
@@ -39,14 +39,30 @@ function puntoDos(estudiantes) {
     
   }
 
-  return lista;
+  return lista
 }
 console.log(puntoDos(datos))
+
 function puntoTres(estudiantes) {
   // CODIGO DE PUNTO 3 AQUI
+    const n = estudiantes.length;
+    for (let i = 0; i < n - 1; i++) {
+      for (let j = 0; j < n - i - 1; j++) {
+        if (estudiantes[j].altura > estudiantes[j + 1].altura) {
+          const temp = estudiantes[j];
+          estudiantes[j] = estudiantes[j + 1];
+          estudiantes[j + 1] = temp;
+        }
+      }
+    }
+  let lista = []
+  for (let i = 0; i < estudiantes.length; i++) {
+    lista[i] =estudiantes[i]._id
+  }
+  return lista
 
-  return [];
 }
+console.log(puntoTres(datos))
 
 function puntoCuatro(numeros) {
   // CODIGO DE PUNTO 4 AQUI
@@ -54,7 +70,7 @@ function puntoCuatro(numeros) {
   for (let i = 0; i < numeros.length; i++) {
     suma += numeros[i]
   }
-  return suma/numeros.length;
+  return suma/numeros.length
 }
 const lista = [5,3,9,3,5,5,2]
 console.log(puntoCuatro(lista))
