@@ -29,9 +29,14 @@ function puntoTres(estudiantes) {
 
 function puntoCuatro(numeros) {
   // CODIGO DE PUNTO 4 AQUI
-
-  return 0;
+  let suma= 0
+  for (let i = 0; i < numeros.length; i++) {
+    suma += numeros[i]
+  }
+  return suma/numeros.length;
 }
+const lista = [5,3,9,3,5,5,2]
+console.log(puntoCuatro(lista))
 
 function puntoCinco(palabra) {
   // CODIGO DE PUNTO 5 AQUI
@@ -41,11 +46,11 @@ function puntoCinco(palabra) {
     let fin = palabra[pal-i]
 
     if (inicio !=fin){
-      return false;
+      return false
     }
     
   }
-  return true;
+  return true
 }
 console.log(puntoCinco("loca"))
 
@@ -55,7 +60,7 @@ function puntoSeis(palabra) {
   for (let i = palabra.length -1; i >=0; i--) {
     inversa += palabra[i] 
   }
-  return inversa;
+  return inversa
 }
 console.log(puntoSeis("Hola"))
 // CODIGO DE PUNTO 7 AQUI
