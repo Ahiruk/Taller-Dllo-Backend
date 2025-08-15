@@ -33,10 +33,15 @@ console.log(puntoUno(datos))
 
 function puntoDos(estudiantes) {
   // CODIGO DE PUNTO 2 AQUI
+  let lista = []
+  for (let i = 0; i < estudiantes.length; i++) {
+    lista[i] = estudiantes[i].nombre + " " + estudiantes[i].apellido  
+    
+  }
 
-  return [];
+  return lista;
 }
-
+console.log(puntoDos(datos))
 function puntoTres(estudiantes) {
   // CODIGO DE PUNTO 3 AQUI
 
