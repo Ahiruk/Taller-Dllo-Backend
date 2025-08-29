@@ -1,4 +1,4 @@
-let variable1 =1; 
+let variable1 =1; //CAMBIA EN EL TIIEMPO
 console.log(typeof variable1); //number
  
 const variable2 = "1";
