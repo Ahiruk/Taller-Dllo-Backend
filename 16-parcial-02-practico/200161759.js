@@ -36,7 +36,6 @@ function puntoDos(estudiantes,semestre){
       );
       return `${nombre} - Semestre ${sem}`;
     }
-    return `No hay estudiantes - Semestre ${sem}`;
   });
 
 }
