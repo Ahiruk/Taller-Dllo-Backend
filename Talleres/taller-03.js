@@ -21,8 +21,6 @@ function desglosarString(texto, tipo) {
     return contador
 }
 
-console.log(desglosarString("murcielagos", "vocales"))
-console.log(desglosarString("murcielagos", "consonantes")) 
 
 
 // Punto 2
@@ -37,8 +35,6 @@ function twoSum(lista, objetivo) {
     return []
 }
 
-console.log(twoSum([2, 7, 11, 15], 9)) 
-console.log(twoSum([3, 4, 2], 6)) 
 
 
 // Punto 3
@@ -67,11 +63,6 @@ function conversionRomana(romano) {
     return total
 }
 
-console.log(conversionRomana("III")) 
-console.log(conversionRomana("XIV")) 
-console.log(conversionRomana("MMXXIV")) 
-console.log(conversionRomana("MCMXCVII")) 
-
 
 // Punto 4
 function descomposicion(cadena) {
@@ -94,4 +85,3 @@ function descomposicion(cadena) {
     return []
 }
 
-console.log(descomposicion("malhumor,al,hum,humor,m,mal,malhu")) // ["mal", "humor"]

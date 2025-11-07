@@ -6,7 +6,7 @@ function convertidorTemp(temperatira){
     return fahrenheit;
 }
 
-console.log(convertidorTemp(-40));
+
 
 //PUNTO 2
 
@@ -21,7 +21,6 @@ const resolvedor = (a, b, c,signo) => { //signo = true para numeros positivos y 
 
 }
 
-console.log(resolvedor(1, 5, 4, false));
 
 //PUNTO 3
 
@@ -33,7 +32,6 @@ function mejorParidad (num) {
     }
 }
 
-console.log(mejorParidad(5));
 
 
 //PUNTO 4
@@ -81,4 +79,3 @@ while (num >= 1 || num <= 10) {
 
 }
 
-console.log(peorParidad(1));

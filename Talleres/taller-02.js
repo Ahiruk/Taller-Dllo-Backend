@@ -10,7 +10,6 @@ function findMax(lista){
     return max
 }
 
-console.log(findMax([3, 17, -1, 4, -19]))
 
 //PUNTO 2
 
@@ -22,8 +21,7 @@ function includes(lista, numero) {
     }
     return false
 }
-console.log(includes([3, 17, -1, 4, -19], 2)) 
-console.log(includes([3, 17, -1, 4, -19], 4)) 
+
 
 
 //PUNTO 3
@@ -36,7 +34,6 @@ function sum(lista) {
     return acum
 }
 
-console.log(sum([3, 17, -1, 4, -19]))
   
 //PUNTO 4
 
@@ -70,4 +67,3 @@ function missingNumbers(lista) {
     return faltantes
 }
 
-console.log(missingNumbers([7,2,4,6,3,9]))
