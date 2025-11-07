@@ -79,3 +79,10 @@ while (num >= 1 || num <= 10) {
 
 }
 
+//EXPORTACIONES 
+module.exports = {
+    convertidorTemp,
+    resolvedor,
+    mejorParidad,
+    peorParidad
+};

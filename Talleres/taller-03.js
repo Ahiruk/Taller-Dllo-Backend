@@ -85,3 +85,9 @@ function descomposicion(cadena) {
     return []
 }
 
+module.exports = {
+    desglosarString,
+    twoSum,
+    conversionRomana,
+    descomposicion
+}
